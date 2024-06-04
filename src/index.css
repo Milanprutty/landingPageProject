@@ -1,0 +1,12 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body,
+html {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}

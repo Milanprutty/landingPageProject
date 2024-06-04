@@ -1,0 +1,85 @@
+.teslaImg > img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  filter: drop-shadow(0px 5.56856px 11.1371px rgba(171, 190, 209, 0.4));
+  border-radius: 5.56856px;
+}
+
+.teslaImg {
+  margin-left: 5%;
+}
+
+.customerRightSide {
+  margin-right: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 25px;
+}
+
+.customers {
+  display: flex;
+  gap: 3rem;
+
+  margin-top: 80px;
+  justify-content: center;
+  max-width: 100%;
+  background: #f5f7fa;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.customerRightSide > :nth-child(1) {
+  font-weight: 500;
+
+  line-height: 23px;
+  color: #717171;
+}
+
+.customerRightSide > :nth-child(2) {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+
+  color: #4caf4f;
+}
+
+.customerRightSide > :nth-child(3) {
+  color: #89939e;
+}
+
+.customerImages {
+  display: flex;
+  gap: 2vw;
+}
+
+.customerImages > img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+@media (max-width: 938px) {
+  .customers {
+    flex-wrap: wrap;
+  }
+  .customerRightSide {
+    margin-left: 1%;
+  }
+  .teslaImg {
+    order: 2;
+    margin: 0px;
+  }
+  .customers {
+    gap: 1rem;
+  }
+  .customerRightSide {
+    text-align: center;
+    align-items: center;
+  }
+  .customerImages {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

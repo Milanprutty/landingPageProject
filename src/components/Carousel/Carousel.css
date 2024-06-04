@@ -1,0 +1,95 @@
+.slick-arrow {
+  display: none !important;
+}
+
+.dataContainer {
+  display: flex !important;
+  align-items: center;
+  gap: 72.39px;
+  height: 416.95px;
+  background: #f5f7fa;
+  justify-content: space-between;
+  position: relative;
+}
+
+.carouselLeftSide {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+  padding-left: 5%;
+  z-index: 2;
+}
+
+.carouselLeftSide > :nth-child(1) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.5484px;
+  line-height: 53px;
+
+  color: #4d4d4d;
+}
+
+.carouselLeftSide > :nth-child(1) > p {
+  margin: 0px;
+  color: #66bb69;
+}
+
+.carouselLeftSide > :nth-child(2) {
+  font-weight: 400;
+
+  line-height: 17px;
+
+  color: #717171;
+}
+
+.carouselRightSide > img {
+  height: 350px;
+}
+
+.carouselRightSide {
+  position: absolute;
+  right: 100px;
+  z-index: 1;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots > li {
+  margin: 0 1px;
+  width: 10px !important;
+}
+
+.slick-dots > li.slick-active button:before {
+  color: #4caf4f;
+}
+
+.slick-dots li button::before {
+  color: #4caf4f;
+  opacity: 0.3;
+  font-size: 8px;
+
+  width: 10px !important;
+}
+
+.slick-dots li button {
+  width: 10px !important;
+}
+
+@media (max-width: 1015px) {
+  .carouselRightSide {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 475px) {
+  .carouselRightSide {
+    right: 5vw;
+  }
+}
+
+.slick-dots li button::before {
+  position: unset;
+}
