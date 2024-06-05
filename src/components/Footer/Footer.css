@@ -135,3 +135,14 @@
     width: max-content;
   }
 }
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link > img {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+}

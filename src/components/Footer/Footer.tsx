@@ -3,6 +3,11 @@ import "./Footer.css";
 import nexcent from "../../assets/whiteNexcent.svg";
 import submit from "../../assets/submit.svg";
 import FooterFrame from "./FooterFrame";
+import insta from "../../assets/ig.svg";
+import ball from "../../assets/basketball.svg";
+import twitter from "../../assets/twitter.svg";
+
+import youtube from "../../assets/youtube.svg";
 
 interface footer {
   columnTitle: string;
@@ -26,6 +31,8 @@ const footerData: footer[] = [
   },
 ];
 
+const links = [insta, ball, twitter, youtube];
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -39,7 +46,15 @@ const Footer = () => {
             <div>Copyright © 2020 Landify UI Kit.</div>
             <div>All rights reserved</div>
           </div>
-          <div className="social-links">ig ba x yt</div>
+          <div className="social-links">
+            {links.map((link, i) => {
+              return (
+                <div className="social-link" key={i}>
+                  <img src={link} />
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className="links">
           {footerData.map((column, i) => {
