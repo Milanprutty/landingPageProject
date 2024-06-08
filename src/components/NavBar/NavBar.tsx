@@ -4,6 +4,7 @@ import rightArrow from "../../assets/rightArrow.svg";
 import NexCent from "../../assets/nexcent.svg";
 import { useEffect, useRef, useState } from "react";
 import DropDown from "./DropDown";
+import "./Colors.css";
 
 const NavBar = () => {
   const [isOpened, setIsOpened] = useState(false);
